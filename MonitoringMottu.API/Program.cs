@@ -48,7 +48,7 @@ namespace MonitoringMottu.API
             });
 
             builder.Services.AddDbContext<MonitoringMottuContext>(options =>
-                options.UseOracle(builder.Configuration.GetConnectionString("DefaultConnection")));
+                options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
             // Registrar repositório genérico para todas as entidades
             builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
