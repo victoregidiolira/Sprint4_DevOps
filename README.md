@@ -55,3 +55,5 @@ Este é um projeto em .NET 8 que implementa uma API RESTful para gerenciamento d
 
 A string de conexão com o banco Oracle foi definida diretamente no arquivo `appsettings.json`.  
 Essa abordagem foi adotada porque, se usassemos o arquivo .env teriamos que mandar esse arquivo por fora e nós não saberiamos fazer isso, senão sendo inserido pelo Github.
+
+Teste em video
