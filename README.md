@@ -11,8 +11,6 @@
   <img src="https://img.shields.io/badge/Status-Online-6A0DAD?logo=microsoft-azure&logoColor=white" alt="Online"/>
 </p>
 
-[![Build Status](https://dev.azure.com/FIAP-VKC/Monitoring%20Mottu/_apis/build/status%2FMonitoring%20Mottu-CI?branchName=main)](https://dev.azure.com/FIAP-VKC/Monitoring%20Mottu/_build/latest?definitionId=6&branchName=main)
-
 ## 📋 Descrição do Projeto
 
 Este repositório contém o código-fonte de uma **API RESTful em .NET 8** para o gerenciamento de **motos e garagens**, desenvolvida como parte do **Desafio da Mottu** (Sprint 4 – FIAP).
