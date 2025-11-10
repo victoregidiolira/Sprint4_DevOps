@@ -60,7 +60,7 @@ namespace MonitoringMottu.API
             using (var scope = app.Services.CreateScope())
             {
                 var dbContext = scope.ServiceProvider.GetRequiredService<MonitoringMottuContext>();
-                dbContext.Database.EnsureCreated(); 
+                dbContext.Database.Migrate(); 
             }
 
 
