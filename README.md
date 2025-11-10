@@ -71,17 +71,6 @@ O fluxo de automação foi dividido em duas pipelines principais:
 - `WEBSITES_PORT`  
 - `ASPNETCORE_ENVIRONMENT`
 
-> 🔒 Todas as variáveis sensíveis são configuradas diretamente no Azure Web App, conforme o requisito **7.IV**.
+> 🔒 Todas as variáveis sensíveis são configuradas diretamente no Azure Web App.
 
 ---
-
-MonitoringMottu/
-├── MonitoringMottu.Api/        # API principal (.NET 8)
-│   ├── Controllers/
-│   ├── Models/
-│   ├── Data/
-│   └── Program.cs
-├── Dockerfile                  # Multi-stage (build + runtime)
-├── azure-pipelines.yml         # Pipeline CI/CD (Azure DevOps)
-└── README.md                   # Este arquivo 💜
-
