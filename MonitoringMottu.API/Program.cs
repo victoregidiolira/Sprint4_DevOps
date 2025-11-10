@@ -56,19 +56,12 @@ namespace MonitoringMottu.API
             builder.Services.AddScoped<IGaragemRepository, GaragemRepository>();
 
             var app = builder.Build();
- 
-            using (var scope = app.Services.CreateScope())
-            {
-                var dbContext = scope.ServiceProvider.GetRequiredService<MonitoringMottuContext>();
-                dbContext.Database.Migrate(); 
-            }
 
-
-            if (app.Environment.IsDevelopment())
-            {
-                app.UseSwagger();
-                app.UseSwaggerUI();
-            }
+            
+            
+            app.UseSwagger();
+            app.UseSwaggerUI();
+            
 
             //app.UseHttpsRedirection();
             app.UseAuthorization();
